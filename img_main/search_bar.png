@@ -1,0 +1,230 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>页面不存在-百度开发者中心</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    
+
+
+
+
+
+
+
+
+
+<meta name="Keywords"
+      content="百度技术,技术开放,开放平台,开发,开发者服务,开发者中心,开发者论坛,云计算,大数据,O2O,地图,统计,api,sdk,推广,运营,变现,广告,开放云,开发文档,app开发,android,IOS">
+<meta name="description"
+      content="百度开发者中心汇聚百度50+优质平台,覆盖云计算、大数据、O2O三大热点技术领域,向开发者共享百度核心技术、数据和资源，包含开放云、大数据、人工智能和地图等处于世界领先地位的高新技术,为开发者提供开发、推广、运营、变现一站式的服务体验.">
+<meta name="baidu-site-verification" content="Zipn0AzejW"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<!-- common config -->
+<script>
+    var $CONFIG = {};
+    $CONFIG['paths.base'] = 'http://developer.baidu.com:80/'; // 根路径
+    $CONFIG['paths.static'] = 'http://developer.baidu.com:80/resources/online/'; // 静态资源路径
+
+    var Developer = Developer || {};
+
+    Developer.constants = Developer.constants || {};
+    Developer.constants.CONTEXT = "http://developer.baidu.com:80/";
+
+    $CONFIG['logging.status'] = 0; // 登录状态
+    $CONFIG['logged.nickname.status'] = 1; // 登录后是否有昵称
+    $CONFIG['paths.api.banner'] = 'https://apibanner.baidu.com'; // api banner路径
+
+    window.UEDITOR_HOME_URL = 'http://developer.baidu.com:80/resources/online/common/widget/ueditor/';
+    window.basePath = 'http://developer.baidu.com:80/';
+</script>
+<!-- 百度统计 -->
+<script>
+    var _hmt = _hmt || [];
+    (function () {
+        var hm = document.createElement("script");
+        hm.src = "http" + "://hm.baidu.com/hm.js?3abe3fb0969d25e335f1fe7559defcc6";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+
+    
+    
+        
+        <link href="http://developer.baidu.com:80/resources/online/common/img/favicon.ico" rel="shortcut icon">
+    
+
+
+
+<!-- css -->
+<link href="http://developer.baidu.com:80/resources/online/libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+<script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+<link href="http://developer.baidu.com:80/resources/online/common/widget/slide/slide.css" rel="stylesheet">
+<link href="http://developer.baidu.com:80/resources/online/css/animate.css" rel="stylesheet">
+<link href="http://developer.baidu.com:80/resources/online/css/style.css?version=v_2018-03-26_15-14" rel="stylesheet">
+
+    <!-- 当前页面css -->
+    <link href="http://developer.baidu.com:80/resources/online/errors/404.css?v_2018-03-26_15-14" rel="stylesheet">
+</head>
+<body>
+    
+     
+
+<!-- 导航栏 -->
+<header class="header" id="developer-header">
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <!-- logo 和 手机版导航栏切换图标 -->
+            
+
+
+<!-- logo 和 手机版导航栏切换图标 -->
+<div class="navbar-header">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+            aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </button>
+    <a href="#" class="btn-closemenu"><i class="icon-x"></i></a>
+    <a class="navbar-brand" href="http://developer.baidu.com:80/">
+        <img src="http://developer.baidu.com:80/resources/online/portal/img/logo.png" alt="百度开发者中心" style="width: 201px; height: 35px;">
+    </a>
+</div>
+<!-- end of logo -->
+
+
+            <!-- end of logo -->
+
+            <!-- 主导航栏 -->
+            <div class="collapse navbar-collapse" id="navbar">
+
+                <!-- 右侧搜索和用户信息 -->
+                
+
+
+
+<!-- 右侧搜索和用户信息 -->
+<ul class="nav navbar-nav navbar-right header-userinfo-nav">
+    <li class="search">
+        <!-- 搜索框 -->
+        <div class="form-group has-feedback navbar-search">
+            <input type="text" class="form-control xs-show" autocomplete="off"
+                   style="width:100%;"/>
+            <span class="glyphicon glyphicon-search form-control-feedback"></span>
+        </div>
+        <!-- end of 搜索框 -->
+    </li>
+    
+        <li class="small-link">
+            <a data-login-check="true" href="javascript:void(0);">登录</a>
+        </li>
+        <li class="small-link">
+            <a href="https://passport.baidu.com/v2/?reg&amp;tpl=newdev&amp;overseas=1&amp;u=http://developer.baidu.com/error.html">注册</a>
+        </li>
+    
+    
+</ul>
+<!-- end of 搜索和个人信息 -->
+
+
+                <!-- end of 搜索和个人信息 -->
+            </div>
+        </div>
+    </nav>
+</header>
+<!-- end of 导航栏 -->
+
+    
+
+    
+    <div id="eui-main-body">
+        <div class="container">
+            <div class="error-page error-page-404">
+                <img class="img" src="http://developer.baidu.com:80/resources/online/errors/img/img_404.png" alt="">
+                <dl class="error-page-txt">
+                    <dt>对不起，您访问的页面去火星了</dt>
+                    <dd>
+                        <p class="t">你可以去这里看看：</p>
+                        <p><a href="http://developer.baidu.com:80/">首页</a></p>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-3 col-md-2 footer-logo">
+                <a href="http://developer.baidu.com:80/">
+                    <img src="http://developer.baidu.com:80/resources/online/portal/img/footer-logo.jpg" width="130px">
+                </a>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4 footer-hr copyright-row">
+                <ul class="nav nav-pills">
+                    <li><a href="http://developer.baidu.com:80/forum/topic/list?boardId=91" target="_blank">问题反馈</a><i>|</i></li>
+                    <li><a href="mailto:developer-support@baidu.com">邮箱</a></li>
+                </ul>
+                <p>
+                    &copy; 2018 Baidu ; 由 <a href="https://cloud.baidu.com/" target="_blank" title="百度云">百度云</a> 提供计算服务
+                </p>
+                <p>
+                    <a href="http://www.baidu.com/duty/" target="_blank" title="使用百度前必读">使用百度前必读</a>
+                    <i>&nbsp;|&nbsp;</i>
+                    京ICP证030173号
+                </p>
+            </div>
+
+            <div class="col-xs-12 col-sm-5 col-md-4 trust-row hidden-xs">
+                <div class="pull-right trust">
+                    <p>全国首批获得可信云服务认证</p>
+
+                    <p>对象存储服务:N002002 云数据库服务:N003002</p>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="col-xs-12 col-md-2 weixin-row footer-hr">
+                <p class="weixin-img">
+                    <img src="http://developer.baidu.com:80/resources/online/portal/img/weixin.jpg"><br/>
+                    关注微信公众号
+                </p>
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+    
+
+    
+<script src="http://developer.baidu.com:80/resources/online/common/lib/jquery/jquery-1.9.1.min.js"></script>
+<script src="http://developer.baidu.com:80/resources/online/common/widget/cropper/cropper.min.js"></script>
+<script src="http://developer.baidu.com:80/resources/online/common/lib/require/require-2.1.11.min.js"></script>
+    
+    <script src="http://developer.baidu.com:80/resources/online/common/lib.js?v_2018-03-26_15-14"></script>
+    <script src="https://passport.baidu.com/passApi/js/uni_login_wrapper.js"></script>
+
+
+
+<script src="http://developer.baidu.com:80/resources/online/libs/bootstrap/js/bootstrap.min.js"></script>
+<script src="http://developer.baidu.com:80/resources/online/libs/bootstrap/js/bootstrap-hover-dropdown.min.js"></script>
+<script src="http://developer.baidu.com:80/resources/online/search/search_header_v2.js?ver1=v_2018-03-26_15-14"></script>
+</body>
+</html>

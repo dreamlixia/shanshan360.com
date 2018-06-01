@@ -1,0 +1,44 @@
+@charset "utf-8";
+/* CSS Document */
+body,ul,dl,dd,ol,li,p,h1,h3,h4,h5,h6,h2,input,textarea,fieldset,legend,td,th{margin:0; padding:0;}
+ul,ol{list-style:none;}
+a{text-decoration:none; color:#666;}
+a,input,area{outline:none;}
+img{display:block; }
+fieldset,img,iframe{border:none;}
+h1,h3,h4,h5,h6,h2,b,strong{font-weight:normal;}
+i,em{font-style:normal;}
+body{font:14px/1em "微软雅黑",arial;}
+table{border-collapse:collapse;}
+.clear:after{content:".";display:block; clear:both; height:0; visibility:hidden; }
+
+.border0{border:none;}
+
+
+
+/* head and bottom styles */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
