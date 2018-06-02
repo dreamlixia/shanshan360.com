@@ -1,3 +1,5 @@
+/*这个项目必须引入bootstrap.css,某些样式已经被bootstrap影响到.如：会把很多标签变成弹性盒*/
+
 body,html,div,ol,ul,li,form,input,p,h1,h2,h3,h4,h5,h6{
 	margin: 0;
 	padding: 0;
@@ -114,6 +116,9 @@ ul,ol,li{
 #nav #nav_main .div_form{
 	margin:31px 45px 0 10px;
 	float: left;
+}
+#nav #nav_main .div_form .form{
+	height:35px;
 }
 #nav #nav_main .div_form .form .text{ 
 	width:406px;
@@ -583,18 +588,19 @@ ul,ol,li{
 	display: inline-block;
 }
 .fresh .fr_left h2>p{
-	width:218px;
+	/*width:218px;*/
 	height:40px;
 	float: right;
 }
+/*不给p和a设宽可以后期往进去添加食品种类*/
 .fresh .fr_left h2>p a{
 	display: inline-block;
-	width:54.5px;
+	/*width:;*/
 	height:14px;
 	font-size:12px;
 	text-align: center;
 	border-right:1px solid #666;
-	margin-top:15px;
+	padding:0px 15px 0 15px;
 }
 .fresh .fr_left h2>p a:last-child{
 	color:#f00;
@@ -682,7 +688,7 @@ ul,ol,li{
 	color:#fff;
 	display: none;
 }
-.fresh .fr_left .fr_leftone ul li:hover>a b{
+.fresh .fr_left .fr_leftone ul li>a:hover b{
 	display: block;
 }
 .fresh .fr_left .fr_leftone ul li>a b:hover{
@@ -698,17 +704,215 @@ ul,ol,li{
 	font-size:19px;
 	line-height:40px;
 	border-bottom:2px solid #666;
+	padding-left:17px;
 }
 .fresh .fr_right ul{
 	width:235px;
-	height:509px;
+	height:470px;
+	border:1px solid #ccc;
+	border-top: none;
+	padding-top:20px;
+	padding-left:20px;
 }
 .fresh .fr_right ul li{
 	overflow: hidden;
+	height:75px;
+	width:215px;
 }
-.fresh .fr_right ul li img{
-	display: block;
+.fresh .fr_right ul li>a{
+	display: inline-block;
+	float: left;
+	width:47px;
+	height:47px;
+	margin-top:3px;
+}
+.fresh .fr_right ul li>a:hover{
+	border:1px solid #45b035;
+}
+.fresh .fr_right ul li>a img{
+	display: inline-block;
 	width:45px;
 	pos-height:45px;
 	float: left;
+}
+.fresh .fr_right ul li p{
+	width:125px;
+	font-size: 12px;
+	float:left;
+	margin-left:10px;
+}
+.fresh .fr_right ul li p span{
+	display: block;
+	font-size:14px;
+	color:#ff6148;
+}
+.fresh .fr_right ul li p span i{
+	font-size:12px;
+	font-style:normal;
+}
+.fresh .fr_right ul li p a:hover{
+	color:#45b035;
+}
+
+.bottom{
+	width:1190px;
+	height:426px;
+	margin:0 auto;
+	margin-bottom:57px;
+}
+.bottom h2{
+	width:1190px;
+	height:40px;
+	font-size:22px;
+	font-weight:bold;
+}
+.bottom h2 img{
+	display: inline-block;
+}
+.bottom ul{
+	width:1190px;
+	height:384px;
+	border:1px solid #ccc;
+	overflow: hidden;
+}
+.bottom ul li{
+	width:297px;
+	height:384px;
+	float: left;
+	padding:15px;
+	border-right:1px solid #ccc;
+}
+.bottom ul li:last-child{
+	border-right:none;
+}
+.bottom ul li img{
+	display: block;
+	width:267px;
+	height:230px;
+	margin-bottom:15px;
+}
+.bottom ul li p{
+	width:267px;
+	height:107px;
+	background:#f6ffe8;
+	padding:13px;
+}
+.bottom ul li p span{
+	display: block;
+	border-bottom: 1px solid #666;
+}
+.bottom ul li p span a{
+	display: block;
+	font-size: 16px;
+	line-height: 26px;
+}
+.bottom ul li p a{
+	font-size: 12px;
+	line-height:18px;
+}
+.bottom ul li p a:hover{
+	color:#45b035;
+}
+
+.base{
+	width:950px;
+	height:180px;
+	margin:0 auto;
+}
+.base ul{
+	width:950px;
+	height:180px;
+	overflow: hidden;
+	color:#333;	
+}
+.base ul li{
+	float: left;
+	width:190px;
+	height:180px;
+	padding-left:50px;
+}
+.base ul li dl{
+	border-right:1px solid #eee;
+}
+.base ul li:last-child dl{
+	border-right:none;
+}
+.base ul li dl dt{
+	font-size:18px;
+	line-height:28px;
+	font-weight:normal;
+}
+.base ul li dl dd a{
+	font-size: 12px;
+	line-height:20px;
+}
+.base ul li dl dd a{
+	color:#333;
+}
+.base ul li dl dd a:hover{
+	/*text-decoration: underline;*/
+	color:#000;
+	border-bottom:1px solid #000;
+}
+.base ul li:nth-child dl dd a{
+	color:#666;
+}
+.base ul li:nth-child(3) dl dd a{
+	border:none;
+	color:#666;
+}
+/*dl的列表符号：b标签*/
+.base ul li dl dd a b{
+	display: inline-block;
+	width:12px;
+	height:12px;
+	line-height: 12px;
+	font-weight:normal;
+	text-align: center;
+}
+
+.foot{
+	width:950px;
+	height:180px;
+	text-align: center;
+	margin:0 auto;
+	padding:10px 0;
+	margin-bottom: 15px;
+}
+.foot .foot_top{
+	width:950px;
+	height:43px;	
+}
+.foot .foot_top a{
+	display: inline-block;
+	font-size: 14px;
+	line-height:23px;
+	color:#666;
+	padding:0 5px;
+}
+.foot .foot_top .guanzhu{
+	color:#000;
+	padding:0 5px;
+}
+.foot p{
+	color:#999;
+	font-size:14px;
+	line-height:20px;
+	padding:2px 0;
+	text-align: center;
+}
+.foot .last a:first-child{
+	display: inline-block;
+	width:30px;
+	height: 30px;
+	margin-right:16px;
+}
+.foot .last a:first-child img{
+	vertical-align: middle;
+	margin-top:-4px;
+}
+.foot .last a:last-child{
+	display: inline-block;
+	width:110px;
+	height: 40px;
 }
