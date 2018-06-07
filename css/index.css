@@ -1,104 +1,56 @@
 /*这个项目必须引入bootstrap.css,某些样式已经被bootstrap影响到.如：会把很多标签变成弹性盒*/
 
-body,html,div,ol,ul,li,form,input,p,h1,h2,h3,h4,h5,h6{
-	margin: 0;
-	padding: 0;
+/*侧边栏*/
+#button_right{
+	position: fixed;
+	bottom:100px;
+	right:0;
+	z-index: 999;
+	width:66px;
+	/*height:330px;*/
 }
-body{
-	font-family: "微软雅黑";
-}
-.clear:after{content:".";display:block; clear:both; height:0; visibility:hidden; }
-a{
-	text-decoration: none;
-	color:#666;
-}
-a:hover{
-	text-decoration: none;
-}
-img{
-	display: block;
-}
-ul,ol,li{
-	list-style: none;
-}
-#top{
-	width: 100%;
-	height: 30px;
-	background: #f7f7f7;
-	font-size:12px;
-	color:#666;
-	border-bottom: 1px solid #f4f4f4;
-}
-#top_center{
-	width:1190px;
-	margin:0 auto;
-}
-#top_center p{
-	float: left;
-	height: 31px;
-	line-height: 31px;
-}
-#top_center p img{
-	vertical-align: middle;
-	display: inline-block;
-}
-#top_center li img{
-	display: inline-block;
-}
-#top #wai{
-	float: right;
-	height: 30px;
-}
-#top #wai li{
-	float: left;
-	line-height: 30px;
+#button_right li{
+	width:66px;
+	/*height:66px;*/
+	cursor:pointer;
 	position: relative;
 }
-#top #wai li a{
-	color:#666;
-	padding: 6px;
+#button_right li img{
+	margin-bottom: 1px;
 }
-#top #wai li a:hover{
-	color: #45b035;
-	text-decoration: none;
-}
-#top #wai li a span{
-	vertical-align: middle;
-	border:4px solid transparent;
-	border-top:4px solid #666;
-	display: inline-block;
-	line-height: 30px;
-}
-/*顶栏的竖线|*/
-.line{
-	height:12px;
-	color:#666;
-	padding:0 15px 0 15px;
-}
-#top #wai li #second{
+#button_erweima div{
+	padding:10px;
+	width:150px;
+	/*height:150px;*/
+	background:#fff;
+	border: 1px solid #ccc;
 	position: absolute;
-	top:28px;
-	right:0;
-	width:84px;
-	height:42px;
-	border:1px solid #45b035;
-	color:#000;
-	padding-left:5px;
+	left:-160px;
+	top:-50px;
 	display: none;
 }
-#top #wai #second li{
-	line-height: 20px;
+#button_erweima:hover div{
+	display: block;
 }
-/*#top #wai li:hover #second{
-	display: none;
-	padding:5px;
+#button_erweima div::after{
+	content:'';display: block;width:10px;height:10px;border:10px solid transparent;border-left:10px solid #fff;position: absolute;top:75px;left:148px;
 }
-#top #wai li:hover a{
-	box-sizing: border-box;
-	border:1px solid #45b035;
-	border-bottom:0px ;
-	
-}*/
+
+#button_erweima div p{
+	font-size:16px;
+	border-bottom:1px solid #ccc;
+	text-align: center;
+	height:40px;
+	line-height: 40px;
+}
+#button_erweima div img{
+	width:130px;
+	height:130px;
+	display: block;
+}
+
+
+/*logo*/
 #nav{
 	width:100%;
 	height:110px;
@@ -159,8 +111,6 @@ ul,ol,li{
 	font-size:11px;
 	height:31px;
 	line-height:31px;
-	/*position: relative;
-	z-index: 100;*/
 }
 .icon p img{
 	display: inline-block;
@@ -183,18 +133,18 @@ ul,ol,li{
 	margin-top:5.5px;
 }
 .icon b{
-	display: inline-block;
-	width:200px;
+	width:260px;
 	height:30px;
 	line-height: 30px;
 	color:#666;
 	box-shadow: 0px 0px 5px #8C8C8C;
 	position: absolute;
-	right:73px;
-	top:107px;
+	right:64px;
+	top:96px;
 	z-index: 2;
 	padding-left:3px;
 	background: #fff;
+	display: none;
 }
 .icon p:nth-child(2):hover{
 	background: #fff;
@@ -367,15 +317,10 @@ ul,ol,li{
 	content:'';display:inline-block;height:10px;width:1px;background: #666;
 	margin:0 10px 0 10px;
 }
-/*.banner ul li div p a:nth-child(2)::after{
-	content:'';display:inline-block;height:10px;width:1px;background: #666;
-	margin:0 10px 0 10px;
-}*/
 .banner ul li div p a:last-child::after{
 	height:0px;
 }
 .banner ul li div p a img{
-	/*margin-top:5px;*/
 	display: block;
 }
 /*山山优选*/
@@ -433,30 +378,34 @@ ul,ol,li{
 	line-height:38px;
 	font-size:14px;
 	border-bottom:1px solid #ccc;
+	overflow: hidden;
 }
 .main .main_left .hot h3 a{
 	display: inline-block;
 	width:94px;
 	text-align: center;
 	border-right:1px solid #ccc;
+	border-bottom: none;
+	height: 38px;
+    overflow: hidden;
 }
-.main .main_left .hot h3 a:nth-child(1){
-	transform: translateY(1px);
+.main .main_left h3 #hot{
+	font-size:16px;
+	font-weight:bold;
 	background: #fff;
 	border-bottom:none;
 }
-/*用js写hover*/
-.main .main_left .hot h3 a:hover{
-	font-size:16px;
-	font-weight:bold;
-	color:#666;
-	transform: translateY(1px);
-	background:#fff;
-	border-bottom:none;
-}
-.main .main_left .hot h3 span{
+.main .main_left .hot h3 #time{
 	display: inline-block;
-	margin-left:500px;
+	font-size:14ppx;
+	width:300px;
+	height:38px;
+	line-height: 38px;
+	float: right;
+}
+.main .main_left .hot h3 #time #b,#strong,#min,#em{
+	display: inline-block;text-align: center;margin-top: 1px;
+	width:35px;height:35px;line-height:38px;background:#eee;font-size:20px;font-weight:bold;font-style:normal;
 }
 .main .main_left .hot ul{
 	overflow: hidden;
@@ -500,7 +449,6 @@ ul,ol,li{
 .main .main_left .hot{
 	position: relative;
 }
-.main .main_left .hot #up{display: ;}
 /*用js在onmouseover时显示*/
 .main .main_left .hot #down{
 	position: absolute;
@@ -595,7 +543,6 @@ ul,ol,li{
 /*不给p和a设宽可以后期往进去添加食品种类*/
 .fresh .fr_left h2>p a{
 	display: inline-block;
-	/*width:;*/
 	height:14px;
 	font-size:12px;
 	text-align: center;
@@ -610,7 +557,6 @@ ul,ol,li{
 	color:#f00;
 }
 .fresh .fr_left .fr_leftone{
-	/*overflow: hidden;*/
 	border-bottom:1px solid #ccc;
 }
 .fresh .fr_left .fr_leftone img{
@@ -648,13 +594,16 @@ ul,ol,li{
 	width:150px;
 	height:150px;
 }
-.fresh .fr_left .fr_leftone ul li a img{
+.fresh .fr_left .fr_leftone ul li>a img{
 	width:150px;
 	height:150px;
 	margin-bottom:8px;
 }
 .fresh .fr_left .fr_leftone ul li p a{
 	display: block;
+	/*设置宽高为了适应文字字数行数不一致,导致页面结构发生变化*/
+	width:153px;
+	height:44px;
 	font-size:12px;
 	line-height:18px;
 }
@@ -758,7 +707,6 @@ ul,ol,li{
 	width:1190px;
 	height:426px;
 	margin:0 auto;
-	margin-bottom:57px;
 }
 .bottom h2{
 	width:1190px;
@@ -814,105 +762,3 @@ ul,ol,li{
 	color:#45b035;
 }
 
-.base{
-	width:950px;
-	height:180px;
-	margin:0 auto;
-}
-.base ul{
-	width:950px;
-	height:180px;
-	overflow: hidden;
-	color:#333;	
-}
-.base ul li{
-	float: left;
-	width:190px;
-	height:180px;
-	padding-left:50px;
-}
-.base ul li dl{
-	border-right:1px solid #eee;
-}
-.base ul li:last-child dl{
-	border-right:none;
-}
-.base ul li dl dt{
-	font-size:18px;
-	line-height:28px;
-	font-weight:normal;
-}
-.base ul li dl dd a{
-	font-size: 12px;
-	line-height:20px;
-}
-.base ul li dl dd a{
-	color:#333;
-}
-.base ul li dl dd a:hover{
-	/*text-decoration: underline;*/
-	color:#000;
-	border-bottom:1px solid #000;
-}
-.base ul li:nth-child dl dd a{
-	color:#666;
-}
-.base ul li:nth-child(3) dl dd a{
-	border:none;
-	color:#666;
-}
-/*dl的列表符号：b标签*/
-.base ul li dl dd a b{
-	display: inline-block;
-	width:12px;
-	height:12px;
-	line-height: 12px;
-	font-weight:normal;
-	text-align: center;
-}
-
-.foot{
-	width:950px;
-	height:180px;
-	text-align: center;
-	margin:0 auto;
-	padding:10px 0;
-	margin-bottom: 15px;
-}
-.foot .foot_top{
-	width:950px;
-	height:43px;	
-}
-.foot .foot_top a{
-	display: inline-block;
-	font-size: 14px;
-	line-height:23px;
-	color:#666;
-	padding:0 5px;
-}
-.foot .foot_top .guanzhu{
-	color:#000;
-	padding:0 5px;
-}
-.foot p{
-	color:#999;
-	font-size:14px;
-	line-height:20px;
-	padding:2px 0;
-	text-align: center;
-}
-.foot .last a:first-child{
-	display: inline-block;
-	width:30px;
-	height: 30px;
-	margin-right:16px;
-}
-.foot .last a:first-child img{
-	vertical-align: middle;
-	margin-top:-4px;
-}
-.foot .last a:last-child{
-	display: inline-block;
-	width:110px;
-	height: 40px;
-}

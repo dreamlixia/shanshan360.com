@@ -1,0 +1,164 @@
+body{
+	background: #f2f2f2;
+}
+.welcome{
+	width:990px;
+	height:80px;
+	padding-top:14px;
+	margin:0 auto;
+	overflow: hidden;
+}
+.welcome img{
+	width:155px;
+	float: left;
+	padding-right:14px;
+	border-right:1px solid #e0e0e0;
+}
+.welcome h3{
+	font-size: 24px;
+	color:#333;
+	margin-top:14px;
+	float: left;
+	padding-left:20px;
+}
+.go_login{
+	width:990px;
+	height:30px;
+	margin:0 auto;
+	font-size:12px;
+	color:#666;
+	text-align: right;
+}
+.go_login a{
+	color:#005aa0;
+}
+.div_form{
+	width:990px;
+	height:445px;
+	background: #fff;
+	margin:0 auto;
+	border:1px solid #c6c6c6;
+	padding-top:25px;
+	position: relative;
+	overflow: hidden;
+}
+.div_form .form{
+	width:750px;
+	height:400px;
+	position: absolute;
+	top:0;
+	left:0;
+	margin-top:25px;
+	margin-bottom:41px;
+	font-size:14px;
+	color:#999;
+}
+.div_form .form p{
+	width:750px;
+	height:42px;
+	line-height:42px;
+	padding-left:94px;
+	margin-bottom:30px;
+	overflow: hidden;
+}
+.div_form .form p label{
+	width:94px;
+	height:42px;
+	text-align: right;
+	font-weight:normal;
+	float: left;
+}
+.div_form .form p label i{
+	color:#f00;
+	font-style:normal;
+	margin-right:3px;
+}
+.div_form .form p input{
+	float: left;
+	width:272px;
+	height:42px;
+	padding-left:10px;
+	margin-left:19px;
+	border:1px solid #ccc;
+}
+/*用于正则验证*/
+.div_form .form p span{
+	display: inline-block;
+	width:262px;
+	height:42px;
+	line-height:42px;
+	border:1px solid #ccc;
+	margin-left:4px;
+	padding-left:4px;
+	background:#f7f7f7;
+	float: left;
+	display: none;
+}
+.div_form .form p b{
+	margin-left:14px;
+	font-weight:normal;
+	font-size: 12px;
+	float: left;
+	width:87px;
+	height: 40px;
+}
+.div_form .form p strong{
+	display: inline-block;float: left;
+	width:80px;
+	height:24px;
+	line-height: 24px;
+	border:1px solid #D43F3A;
+	margin-top:9px;
+	margin-left:3px;
+	text-align: center;
+	font-size:16px;
+	font-weight: bold;
+	word-spacing: 2px;
+}
+.div_form .form p b a{
+	color:#005aa0;
+}
+.div_form .form p em{
+	font-style: normal;
+}
+.div_form .form p em a{
+	color:#005aa0;
+}
+.div_form .form p img{
+	display: block;
+	margin-left:19px;
+}
+.div_form .form p #code{
+	width:87px;
+}
+.div_form .form p #check{
+	width:13px;
+	height:13px;
+	margin-top:16px;
+}
+.div_form .form p:nth-child(5){
+	margin-bottom: 20px;
+}
+.div_form .form p #user{
+	background:url(../img_logon/one4.jpg) no-repeat 246px center;
+}
+.div_form .form p #pwd,#pwdagain{
+	background:url(../img_logon/icon-lock.jpg) no-repeat 246px center;
+}
+.div_form>a{
+	display: block;
+	width:360px;
+	height:272px;
+	margin-left:570px;
+}
+.div_form>a>img{
+	display: block;
+	width:360px;
+	height:272px;
+}
+.big{
+	width:100%;
+	background: #fff;
+	margin-top: 100px;
+	padding-bottom: 10px;
+}

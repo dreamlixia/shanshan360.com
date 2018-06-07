@@ -1,0 +1,154 @@
+body{
+	background: #f2f2f2;
+}
+.welcome{
+	width:990px;
+	height:80px;
+	padding-top:14px;
+	margin:0 auto;
+	overflow: hidden;
+}
+.welcome img{
+	width:155px;
+	float: left;
+	padding-right:14px;
+	border-right:1px solid #e0e0e0;
+}
+.welcome h3{
+	font-size: 24px;
+	color:#333;
+	margin-top:14px;
+	float: left;
+	padding-left:20px;
+}
+.yin{
+	width:990px;
+	height:387px;
+	background: #eee;
+	margin:0 auto;
+	padding-top:15px;
+}
+.div_form{
+	width:960px;
+	height:357px;
+	background: #fff;
+	margin:0 auto;
+	padding-top:25px;
+	position: relative;
+	overflow: hidden;
+}
+.div_form .form{
+	width:485px;
+	height:372px;
+	position: absolute;
+	top:0;
+	left:0;
+	margin-top:25px;
+	margin-bottom:41px;
+	font-size:14px;
+	color:#999;
+}
+.div_form .form p{
+	width:485px;
+	height:42px;
+	line-height:42px;
+	padding-left:94px;
+	margin-bottom:30px;
+	overflow: hidden;
+}
+.div_form .form p label{
+	width:94px;
+	height:42px;
+	text-align: right;
+	font-weight:normal;
+	float: left;
+}
+.div_form .form p label i{
+	color:#f00;
+	font-style:normal;
+	margin-right:3px;
+}
+.div_form .form p input{
+	float: left;
+	width:272px;
+	height:42px;
+	padding-left:10px;
+	margin-left:19px;
+	border:1px solid #ccc;
+}
+.div_form .form p:nth-child(3){
+	height:20px;
+	line-height:20px;
+	margin-bottom:10px;
+}
+.div_form .form p:nth-child(4){
+	margin-bottom: 10px;
+}
+.div_form .form p:nth-child(4) label{
+	margin-right: 20px;
+}
+.div_form .form p:nth-child(5){
+	height:20px;
+	line-height:20px;
+	margin-bottom:10px;
+}
+.div_form .form p:nth-child(3) a{
+	margin-left:194px;
+	color:#005AA0;
+}
+.div_form .form p:nth-child(5) a{
+	margin-left:233px;
+	color:#005AA0;
+}
+.div_form .form p:nth-child(6){
+	margin-bottom: 0px;
+	color:#666;
+}
+.div_form .form p:nth-child(7) a{
+	display: inline-block;
+}
+
+
+
+
+.div_form .form p #user{
+	background:url(../img_logon/one4.jpg) no-repeat 246px center;
+}
+.div_form .form p #pwd{
+	background:url(../img_logon/icon-lock.jpg) no-repeat 246px center;
+}
+
+
+
+.div_form>a{
+	display: block;
+	width:360px;
+	height:272px;
+	margin-left:570px;
+}
+.div_form>a>img{
+	display: block;
+	width:360px;
+	height:272px;
+}
+
+
+
+
+
+
+
+
+
+.big{
+	width:100%;
+	height:326px;
+	background: #fff;
+	margin-top: 100px;
+	padding-bottom: 10px;
+}
+.big .big_top{
+	width:100%;
+	height:7px;
+	background:url(../img_login/footer-wrapbg.jpg) repeat-x;
+}
